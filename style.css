@@ -9299,7 +9299,7 @@ a {
     color: #fff; }
 
 .form-control {
-  height: 47px; }
+  height:37px; }
   .form-control:active, .form-control:focus {
     border-color: #434ba4; }
   .form-control:hover, .form-control:active, .form-control:focus {
@@ -9614,7 +9614,7 @@ a {
 
 .footer {
   font-size: 14px;
-  padding: 7rem 0; }
+  padding: 0 0; }
 
 .widget h3 {
   font-size: 20px;
