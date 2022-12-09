@@ -1,321 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SEO HTML-5 Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.html" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.jpeg"
+    />
 
-<head>
-    <title>Hi.Rel.</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script nonce="c2e082d2-40c4-48e0-94f0-cd04606f49e5">
+      (function (w, d) {
+        !(function (cM, cN, cO, cP) {
+          cM.zarazData = cM.zarazData || {};
+          cM.zarazData.executed = [];
+          cM.zaraz = { deferred: [], listeners: [] };
+          cM.zaraz.q = [];
+          cM.zaraz._f = function (cQ) {
+            return function () {
+              var cR = Array.prototype.slice.call(arguments);
+              cM.zaraz.q.push({ m: cQ, a: cR });
+            };
+          };
+          for (const cS of ["track", "set", "debug"])
+            cM.zaraz[cS] = cM.zaraz._f(cS);
+          cM.zaraz.init = () => {
+            var cT = cN.getElementsByTagName(cP)[0],
+              cU = cN.createElement(cP),
+              cV = cN.getElementsByTagName("title")[0];
+            cV && (cM.zarazData.t = cN.getElementsByTagName("title")[0].text);
+            cM.zarazData.x = Math.random();
+            cM.zarazData.w = cM.screen.width;
+            cM.zarazData.h = cM.screen.height;
+            cM.zarazData.j = cM.innerHeight;
+            cM.zarazData.e = cM.innerWidth;
+            cM.zarazData.l = cM.location.href;
+            cM.zarazData.r = cN.referrer;
+            cM.zarazData.k = cM.screen.colorDepth;
+            cM.zarazData.n = cN.characterSet;
+            cM.zarazData.o = new Date().getTimezoneOffset();
+            if (cM.dataLayer)
+              for (const cZ of Object.entries(
+                Object.entries(dataLayer).reduce((c_, da) => ({
+                  ...c_[1],
+                  ...da[1],
+                }))
+              ))
+                zaraz.set(cZ[0], cZ[1], { scope: "page" });
+            cM.zarazData.q = [];
+            for (; cM.zaraz.q.length; ) {
+              const db = cM.zaraz.q.shift();
+              cM.zarazData.q.push(db);
+            }
+            cU.defer = !0;
+            for (const dc of [localStorage, sessionStorage])
+              Object.keys(dc || {})
+                .filter((de) => de.startsWith("_zaraz_"))
+                .forEach((dd) => {
+                  try {
+                    cM.zarazData["z_" + dd.slice(7)] = JSON.parse(
+                      dc.getItem(dd)
+                    );
+                  } catch {
+                    cM.zarazData["z_" + dd.slice(7)] = dc.getItem(dd);
+                  }
+                });
+            cU.referrerPolicy = "origin";
+            cU.src =
+              "../../cdn-cgi/zaraz/sd0d9.js" +
+              btoa(encodeURIComponent(JSON.stringify(cM.zarazData)));
+            cT.parentNode.insertBefore(cU, cT);
+          };
+          ["complete", "interactive"].includes(cN.readyState)
+            ? zaraz.init()
+            : cM.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
     <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
-    <script>window.LogRocket && window.LogRocket.init('zlm0pg/hirel-website');</script>
-</head>
-
-<body>
-    <div class="site-wrap">
-        <div class="site-mobile-menu">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
+    <script>window.LogRocket && window.LogRocket.init('zlm0pg/hirel1');</script>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "evsmc480jo");
+  </script>
+  </head>
+  <body>
+    <header>
+      <div class="header-area header-transparent">
+        <div class="main-header header-sticky">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-xl-2 col-lg-2">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img style="width:140px" src="assets/img/logo/logo.png" alt=""
+                  /></a>
                 </div>
+              </div>
+              <div class="col-xl-10 col-lg-10">
+                <div
+                  class="menu-wrapper d-flex align-items-center justify-content-end"
+                >
+                  <div class="main-menu d-none d-lg-block">
+                    <nav>
+                      <ul id="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <li><a href="services.html">Services</a></li> -->
+                        <!-- <li>
+                          <a href="#">Blog</a>
+                          <ul class="submenu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li>
+                              <a href="blog_details.html">Blog Details</a>
+                            </li>
+                            <li><a href="elements.html">Element</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li> -->
+
+                        <li class="button-header">
+                          <img style="width: 140px;" src="assets/img/google-play-badge.png"/>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
             </div>
-            <div class="site-mobile-menu-body"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="slider-area position-relative slider-bg1">
+        <div class="slider-active">
+          <div class="single-slider slider-height d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9">
+                  <div class="hero__caption">
+                    <h1 data-animation="fadeInUp" data-delay="0.2s">
+                      Build audience and grow your brand
+                    </h1>
+                    <p data-animation="fadeInUp" data-delay="0.4s">
+                      Content marketing is nothing but offering users value. It
+                      is not just about traffic minion customers.
+                    </p>
+                    <a
+                      href="#"
+                      class="btn_10 hero-btn"
+                      data-animation="fadeInUp"
+                      data-delay="0.7s"
+                      >Explore Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="assets/img/hero/hero-img.png" alt="" />
+        </div>
+        <div class="hero-shape">
+          <img src="assets/img/gallery/hero-shape.png" alt="" />
+        </div>
+      </div>
+
+      <div class="brand-area section-padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+              <div class="section-tittle section-tittle2 text-center mb-70">
+                <h2>Trusted by over 3,000 world’s leading companies</h2>
+                <p>
+                  Content marketing is nothing but offering users value. It is
+                  not just about traffic minion consectetur adipiscing elitd do
+                  eiusmod tempor incididun.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="container">
-            <div class="row no-gutters site-navbar align-items-center py-3">
-                <div class="col-6 col-lg-2 site-logo">
-                    <a href="index.html"><img src="hirel.png" alt="" width="150"></a>
-                </div>
-
-                <div class="col-6 col-lg-10 text-right menu">
-                    <nav class="site-navigation text-right text-md-right" >
-                        <ul class="site-menu js-clone-nav d-lg-block">
-                            <li class="active">
-                                <a href="#book-demo" class="btn btn-primary py-2 px-4" style="color: white;">Get Demo</a>
-                                <a href="https://app.hirel.in/login" class="btn btn-primary py-2 px-4" style="color: black; background-color: white;" target="_blank">Login</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                </div>
-
+          <div class="brand-active brand-border">
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand1.png" alt="" />
             </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand2.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand3.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand4.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand5.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand6.png" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/gallery/brand4.png" alt="" />
+            </div>
+          </div>
         </div>
-        <main>
-            <div class="site-hero">
-                <div class="container">
-                    <div class="bg-img" style="background-image: url('hero.jpg');">
-                        <blockquote style="display: none;">
-                            <p>Design is not just what it looks like and feels like. Design is how it works.</p>
-                            <div class="author">
-                                <img src="images/person_1.jpg" alt="Person image">
-                                <cite>Steve Jobs</cite>
-                            </div>
-                        </blockquote>
-                        <div class="cta-box" style="background-color: rgba(255,255,255,0.9)">
-                            <h2>Employee Life Cycle Made Easier</h2>
-                            <p>Facing Challenges in Onboarding! <br>
-                                Onboard your next employee hassle free by generating different types of documents required while onboarding an employee in a single click with hirel.</p>
-                            <a href="#book-demo" class="contact-now">Book a Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="site-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-6 col-lg-3">
-                            <a class="service">
-                                <img src="images/flaticon/svg/001.svg" alt="Image" class="img-fluid">
-                                <h3>Automated Emp. Lifecycle</h3>
-                                <p>Generate any document for the employee in just 2 minutes</p>
-                                <ul class="list-unstyled services-list">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3">
-                            <a class="service">
-                                <img src="digital-signature.png" alt="Image" class="img-fluid">
-                                <h3>E-Signing</h3>
-                                <p>Get digitally signed documents with E-Signing process.</p>
-                                <ul class="list-unstyled services-list">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3">
-                            <a class="service">
-                                <img src="calculator.png" alt="Image" class="img-fluid">
-                                <h3>Auto CTC Calculator</h3>
-                                <p>Enter the total CTC and get complete CTC breakup.</p>
-                                <ul class="list-unstyled services-list">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3">
-                            <a class="service">
-                                <img src="cloud-data.png" alt="Image" class="img-fluid">
-                                <h3>Cloud Storage</h3>
-                                <p>Cenetarlised and organised employee data.</p>
-                                <ul class="list-unstyled services-list">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="site-section">
-                <div class="container">
-                    <div class="half d-md-flex d-block align-items-stretch">
-                        <a href="single.html" class="img" style="background-image: url('offer-letter.jpg')">
-                        </a>
-                        <div class="half-content align-self-center">
-                            <h3>About Hirel</h3>
-                            <p>HIREL's concept is to solve the challenges encountered during the onboarding process by generating all required documents in a single click.
-                                We use AI and machine learning to automate the process, saving users up to 80% of their time. This is achieved by providing document templates as well as personalised templates based on previous hiring profiles.</p>
-                            <!-- <p>
-                                <strong>Client:</strong> JUVINLE Corp. <br>
-                                <strong>Date:</strong> 2020
-                            </p>
-                            <a href="single.html">View Case Study</a> -->
-                        </div>
-                    </div>
-                    <div class="half d-md-flex align-items-stretch">
-                        <a href="single.html" class="img order-md-2" style="background-image: url('onboarding.jpg')">
-                        </a>
-                        <div class="half-content align-self-center">
-                            <h3>Zero Manual Work</h3>
-                            <p>Find a revolutionary Employee life cycle management software to handle all your boring and less productive administrative tasks and use your precious time in more strategic task and hirings. Do generate all types of documents like LOI,offer letter,Joining/appointment letter,confirmation and experience/relieving letters in just 2 steps in  2 mins with single platform Hirel.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="site-section" style="display: none;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-6 col-lg-4">
-                            <div class="testimonial">
-                                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-                                <div class="mb-3">
-                                    <h3>Steve Jobs</h3>
-                                    <span>Co-Founder</span>
-                                </div>
-                                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-                                    possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi
-                                    pariatur..&rdquo;</blockquote>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4">
-                            <div class="testimonial">
-                                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-                                <div class="mb-3">
-                                    <h3>John Doe</h3>
-                                    <span>Co-Founder</span>
-                                </div>
-                                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-                                    possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi
-                                    pariatur..&rdquo;</blockquote>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4">
-                            <div class="testimonial">
-                                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-                                <div class="mb-3">
-                                    <h3>John Smith</h3>
-                                    <span>Co-Founder</span>
-                                </div>
-                                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-                                    possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi
-                                    pariatur..&rdquo;</blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
 
-        </main>
-
-        <main id="book-demo">
-            <div class="heading" style="margin: 0; margin-bottom: 20px">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <h1 style="font-size: 35px">Book a Demo</h1>
-                            <p>We make it easier to get started</p>
-                            <p>Whether you have a question about Hirel features, pricing, need a demo or a consultation; We are happy to answer all your questions.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="support-company-area top-padding2">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xl-6 col-lg-6 col-md-10">
+              <div class="support-location-img">
+                <img src="assets/img/gallery/about.png" alt="" />
+              </div>
             </div>
-
-            <div class="site-section" style="padding: 0;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 mb-5">
-                            <div class="contact-form">
-                                <div class="row form-group">
-                                    <div class="col-md-12 mb-3 mb-md-0">
-                                    <label class="font-weight-bold" for="fullname">Your Name</label>
-                                        <input type="text" id="name" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12 mb-3 mb-md-0">
-                                    <label class="font-weight-bold" for="companyname">Comapny Name</label>
-                                        <input type="text" id="company" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="font-weight-bold" for="email">Work Email</label>
-                                        <input type="email" id="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="font-weight-bold" for="email">Contact Number</label>
-                                        <input type="text" id="phone" class="form-control"
-                                            placeholder="">
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <input type="submit" value="Book Demo" class="btn btn-primary py-2 px-4" id="bookDemo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 ml-auto">
-                            <div class="p-4 mb-3 bg-white">
-                                <h3 class="h5 text-black mb-3">Contact Info</h3>
-                                <p class="mb-0 font-weight-bold text-black">Address</p>
-                                <p class="mb-4 text-black">Plot no 730 Sec 39, Gurgaon 122022</p>
-                                <!-- <p class="mb-0 font-weight-bold text-black">Phone</p> -->
-                                <!-- <p class="mb-4"><a href="#">+91 82858 88618</a></p> -->
-                                <p class="mb-0 font-weight-bold text-black">Email Address</p>
-                                <p class="mb-0"><a href="#">contact@hirel.in</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xl-5 col-lg-6 col-md-10">
+              <div class="right-caption">
+                <div class="section-tittle mb-30">
+                  <h2>We take a steps to build a successful business</h2>
                 </div>
+                <div class="support-caption">
+                  <p class="mb-40">
+                    Content marketing is nothing but offering users value. It is
+                    not just about traffic minion consectetur adipiscing elitd
+                    do eiusmod tempor incididun.
+                  </p>
+                  <a href="about.html" class="btn_10">Explore Us</a>
+                </div>
+              </div>
             </div>
-        </main>
-        <hr>
-        <br>
-        <div class="footer">
-            <div class="container">
-                <div class="row footer-inner">
-                    <div class="col-lg-4">
-                        <div class="widget mb-4">
-                            <h3>About Us</h3>
-                            <p>The idea behind HIREL is to solve the challenges faced during the onboarding process by generating all of the documents required in a single click. We use AI and machine learning to automate the process, saving users up to 80% of their time. This is achieved by providing document templates as well as personalised templates based on previous hiring profiles.</p>
-                        </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="feature-area section-img-bg2"
+        data-background="assets/img/gallery/section_bg01.png"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-xl-8 col-lg-9 col-md-10">
+              <div class="section-tittle text-center mb-60">
+                <h2>How we can help</h2>
+                <p>
+                  Content marketing is nothing but offering users value. It is
+                  not just about traffic minion consectetur adipiscing elitd do
+                  eiusmod tempor incididun.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="single-offers mb-20">
+                <div class="offers-cap">
+                  <img src="assets/img/icon/check.svg" alt="" />
+                  <h3><a href="#">Digital marketing</a></h3>
+                  <p>
+                    The words you use in your written communications speak
+                    volumes. Dozens of organisations already reap the benefits
+                    of having an experienced.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="single-offers mb-20">
+                <div class="offers-cap">
+                  <img src="assets/img/icon/check.svg" alt="" />
+                  <h3><a href="#">Social media marketing</a></h3>
+                  <p>
+                    The words you use in your written communications speak
+                    volumes. Dozens of organisations already reap the benefits
+                    of having an experienced.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="single-offers mb-20">
+                <div class="offers-cap">
+                  <img src="assets/img/icon/check.svg" alt="" />
+                  <h3><a href="#">Content create</a></h3>
+                  <p>
+                    The words you use in your written communications speak
+                    volumes. Dozens of organisations already reap the benefits
+                    of having an experienced.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="single-offers mb-20">
+                <div class="offers-cap">
+                  <img src="assets/img/icon/check.svg" alt="" />
+                  <h3><a href="#">Web design</a></h3>
+                  <p>
+                    The words you use in your written communications speak
+                    volumes. Dozens of organisations already reap the benefits
+                    of having an experienced.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="project-us pb-padding section-padding">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-10">
+              <div class="project-caption">
+                <div class="section-tittle mb-20">
+                  <h2>We are here to help you for better solutions</h2>
+                </div>
+                <p class="project-cap-top">
+                  Content marketing is nothing but offering users value. It is
+                  not just about traffic minion consectetur adipiscing elitd do
+                  eiusmod tempor incididun.
+                </p>
+                <a href="#" class="btn_10">Explore Us</a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10">
+              <div class="project-right-cap">
+                <div class="project-right-img">
+                  <img src="assets/img/gallery/about2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-card-area fix bottom-padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-7 col-md-10">
+              <div class="section-tittle text-center mb-60">
+                <h2>Register yourself as</h2>
+                <p>
+                  Content marketing is nothing but offering users value. It is
+                  not just about traffic minion consectetur adipiscing elitd do
+                  eiusmod tempor incididun.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+              <div class="single-card text-center mb-30">
+                <div class="card-top">
+                  <span style="font-size: 25px;">Employer</span>
+                </div>
+                <div class="card-mid">
+                  <p>Are you looking for right fit for your team.</p>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="btn_10 get-btn">Post a job</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+              <div class="single-card text-center mb-30">
+                <div class="card-top">
+                  <span style="font-size: 25px;">Referrer</span>
+                </div>
+                <div class="card-mid">
+                  <p>Refer right people and Earn</p>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="btn_10 get-btn">Refer Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+              <div class="single-card text-center mb-30">
+                <div class="card-top">
+                  <span style="font-size: 25px;">Candidate</span>
+                </div>
+                <div class="card-mid">
+                  <p>Apply now and get hired by top companies</p>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="btn_10 get-btn">Apply now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="wantToWork-area w-padding section-img-bg2"
+        data-background="assets/img/gallery/section_bg02.jpg"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xl-8 col-lg-9 col-md-8">
+              <div class="wants-wrapper">
+                <div class="wantToWork-caption wantToWork-caption2">
+                  <h2>Let's talk about your project</h2>
+                  <p>
+                    Content marketing is nothing but offering users value. It is
+                    not just about traffic minion consectetur adipiscing elitd
+                    do eiusmod tempor incididun.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4">
+              <a href="#" class="border-btn border-btn2 wantToWork-btn f-right"
+                >Start Talking</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-area footer-padding">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <div class="single-footer-caption mb-30">
+                    <div class="footer-logo mb-35">
+                      <a href="index.html"
+                        ><img style="width: 140px;" src="assets/img/logo/logo2_footer.png" alt=""
+                      /></a>
                     </div>
-                    <div class="col-lg-2 pl-4 ml-auto">
-                        <div class="widget mb-4">
-                            <!-- <h3>Navigation</h3>
-                            <ul class="list-unstyled links">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="widget mb-4">
-                            <h3>Features</h3>
-                            <ul class="list-unstyled links">
-                                <li><a href="#">All documents</a></li>
-                                <li><a href="#">E-Signing</a></li>
-                                <li><a href="#">Cloud Storage</a></li>
-                                <li><a href="#">Auto CTC Calculator</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="widget mb-4">
-                            <h3>Social</h3>
-                            <ul class="list-unstyled social">
-                                <li><a href="#"><span class="mr-2 icon-facebook"></span> Facebook</a></li>
-                                <li><a href="#"><span class="mr-2 icon-twitter"></span> Twitter</a></li>
-                                <li><a href="#"><span class="mr-2 icon-instagram"></span> Instagram</a></li>
-                                <li><a href="https://www.linkedin.com/company/hireldotin/"><span class="mr-2 icon-linkedin"></span> Linkedin</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-5 text-center copyright">
+                    <div class="footer-tittle">
+                      <div class="footer-pera">
                         <p>
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved
-
+                          Land behold it created good saw after she'd Our set
+                          living. Signs midst dominion creepeth morning laboris
+                          nisi ufsit aliquip.
                         </p>
+                      </div>
+
+                      <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a
+                          href="../../../external.html?link=https://bit.ly/sai4ull"
+                          ><i class="fab fa-facebook-square"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/company/hireldotin/"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fab fa-pinterest-square"></i></a> -->
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Navigation</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-8 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Services</h4>
+                    <ul>
+                      <li><a href="#">Blackforest</a></li>
+                      <li><a href="#">Bodhubon</a></li>
+                      <li><a href="#">Rongdhonu</a></li>
+                      <li><a href="#">Meghrong</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle mb-20">
+                    <!-- <h4>Contact Us</h4>
+                    <p>76/A, Green Lane, Dhanmondi, NYC</p> -->
+                    <img style="width: 140px;" src="assets/img/google-play-badge.png"/>
+                  </div>
+                  <ul class="mb-20">
+                    <!-- <li class="number"><a href="#">+10 (78) 738-9083</a></li> -->
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div class="footer-bottom-area">
+          <div class="container">
+            <div class="footer-border">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="footer-copy-right text-center">
+                    <p>
+                      Copyright &copy;
+                      <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                      All rights reserved | This template is made with
+                      <i
+                        class="fa fa-heart color-danger"
+                        aria-hidden="true"
+                      ></i>
+                      by
+                      <a
+                        href="../../../external.html?link=https://colorlib.com/"
+                        target="_blank"
+                        rel="nofollow noopener"
+                        >Colorlib</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="back-top">
+      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-  
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js%2bjquery-ui.js%2bpopper.min.js.pagespeed.jc.no68Pn7aIK.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js%2bjquery.stellar.min.js.pagespeed.jc.hXJ6KJ0D-e.js"></script>
-    <script src="js/jquery.fancybox.min.js%2baos.js%2bmain.js.pagespeed.jc.KdCfI0JgCN.js"></script>
-    <script src="sendDemo.js"></script>
-</body>
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/jquery.form.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/mail-script.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script
+      async
+      src="../../../external.html?link=https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="../../../external.html?link=https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon='{"rayId":"776f745f78b7098a","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
