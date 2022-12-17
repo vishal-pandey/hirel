@@ -274,7 +274,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12" style="display: flex; align-items: center; justify-content: space-around;">
+            <div class="col-xl-12 col-lg-12 col-md-12" style="display: flex; align-items: center; justify-content: center;">
               <button id="referer" class="v-tab-button">As Referer</button>
               <button id="employeer" class="v-tab-button">As Employeer</button>
               <button id="candidate" class="v-tab-button">As Candidate</button>
@@ -293,25 +293,23 @@
                 cursor: pointer;
               }
             </style>
-            <script>
-              
-            </script>
-            <div class="col-xl-4 col-lg-4 col-md-4">
+            
+            <div class="col-xl-12 col-lg-12 col-md-12 referer">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
                   <img src="assets/img/icon/check.svg" alt="" />
-                  <h3><a href="#">As referrer</a></h3>
+                  <!-- <h3><a href="#">As referrer</a></h3> -->
                   <p>
                     1. Find a posted jobs on our platform to refer a candidate
+                    <br>
+                    2. Details-Visit our job board to see all currently active jobs. Every job has a referral amount mentioned in the details- this is what you earn when a candidate you referred is hired.
+                    <br>
 
-                    The words you use in your written communications speak
-                    volumes. Dozens of organisations already reap the benefits
-                    of having an experienced.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="col-xl-12 col-lg-12 col-md-12 employeer" style="display: none;">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
                   <img src="assets/img/icon/check.svg" alt="" />
@@ -324,7 +322,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="col-xl-12 col-lg-12 col-md-12 candidate" style="display: none;">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
                   <img src="assets/img/icon/check.svg" alt="" />
@@ -337,6 +335,32 @@
                 </div>
               </div>
             </div>
+
+            <script>
+              window.onload = ()=>{
+                let referer = document.querySelector(".referer")
+                let employeer = document.querySelector(".employeer")
+                let candidate = document.querySelector(".candidate")
+                document.querySelector("#referer").onclick = () =>{
+                  referer.style.display="block"
+                  employeer.style.display="none"
+                  candidate.style.display="none"
+                }
+
+                document.querySelector("#employeer").onclick = () =>{
+                  referer.style.display="none"
+                  employeer.style.display="block"
+                  candidate.style.display="none"
+                }
+                
+                document.querySelector("#candidate").onclick = () =>{
+                  referer.style.display="none"
+                  employeer.style.display="none"
+                  candidate.style.display="block"
+                }
+                
+              }
+            </script>
           </div>
         </div>
       </div>
