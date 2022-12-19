@@ -162,7 +162,7 @@
               <div class="row">
                 <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9">
                   <div class="hero__caption">
-                    <h1 data-animation="fadeInUp" data-delay="0.2s">
+                    <h1 data-animation="fadeInUp" data-delay="0.2s" style="font-size: 35px;">
                       Refer your friends to great jobs & earn money
                     </h1>
                     <p data-animation="fadeInUp" data-delay="0.4s">
@@ -273,9 +273,9 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row align-items-center" style="display: flex; align-items: center; justify-content: center;">
             <div class="col-xl-12 col-lg-12 col-md-12" style="display: flex; align-items: center; justify-content: center;">
-              <button id="referer" class="v-tab-button">As Referer</button>
+              <button id="referer" class="v-tab-button" style="background-color: black; color: white;">As Referer</button>
               <button id="employeer" class="v-tab-button">As Employeer</button>
               <button id="candidate" class="v-tab-button">As Candidate</button>
             </div>
@@ -294,22 +294,26 @@
               }
             </style>
             
-            <div class="col-xl-12 col-lg-12 col-md-12 referer">
+            <div class="col-xl-7 col-lg-7 col-md-7 referer">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
                   <img src="assets/img/icon/check.svg" alt="" />
                   <!-- <h3><a href="#">As referrer</a></h3> -->
                   <p>
-                    1. Find a posted jobs on our platform to refer a candidate
+                    <b> 1. Find a posted jobs on our platform to refer a candidate </b>
+                    Details-Visit our job board to see all currently active jobs. Every job has a referral amount mentioned in the details- this is what you earn when a candidate you referred is hired.
                     <br>
-                    2. Details-Visit our job board to see all currently active jobs. Every job has a referral amount mentioned in the details- this is what you earn when a candidate you referred is hired.
+                    <b>2. Refer a candidate</b>
+                    Refer by providing us with your candidate's profile in just one single click by simply selecting a candidate profile from your network or database and clicking refer button. That's it!
                     <br>
+                    <b>3. Track your candidate...and get paid!</b>
+                    You can track the status of each of your referred candidates through your dashboard. When a candidate you referred is hired, you will get the position's referral amount in your bank account.
 
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 employeer" style="display: none;">
+            <div class="col-xl-7 col-lg-7 col-md-7 employeer" style="display: none;">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
                   <img src="assets/img/icon/check.svg" alt="" />
@@ -322,7 +326,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 candidate" style="display: none;">
+            <div class="col-xl-7 col-lg-7 col-md-7 candidate" style="display: none;">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
                   <img src="assets/img/icon/check.svg" alt="" />
@@ -341,24 +345,46 @@
                 let referer = document.querySelector(".referer")
                 let employeer = document.querySelector(".employeer")
                 let candidate = document.querySelector(".candidate")
-                document.querySelector("#referer").onclick = () =>{
+                document.querySelector("#referer").onclick = (el) =>{
+                  
+                  resetTabs()
+                  el.target.style.backgroundColor="black"
+                  el.target.style.color="white"
+
                   referer.style.display="block"
                   employeer.style.display="none"
                   candidate.style.display="none"
                 }
 
-                document.querySelector("#employeer").onclick = () =>{
+                document.querySelector("#employeer").onclick = (el) =>{
+                  
+                  resetTabs()
+                  el.target.style.backgroundColor="black"
+                  el.target.style.color="white"
+                  
                   referer.style.display="none"
                   employeer.style.display="block"
                   candidate.style.display="none"
                 }
                 
-                document.querySelector("#candidate").onclick = () =>{
+                document.querySelector("#candidate").onclick = (el) =>{
+
+                  resetTabs()
+                  el.target.style.backgroundColor="black"
+                  el.target.style.color="white"
+                  
                   referer.style.display="none"
                   employeer.style.display="none"
                   candidate.style.display="block"
                 }
                 
+                function resetTabs() {
+                  document.querySelectorAll(".v-tab-button").forEach((el)=>{
+                    el.style.backgroundColor = "white"
+                    el.style.color = "black"
+                  })
+                }
+
               }
             </script>
           </div>
