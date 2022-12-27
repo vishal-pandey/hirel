@@ -288,22 +288,23 @@
           </div>
           <div class="row align-items-center" style="display: flex; align-items: center; justify-content: center;">
             <div class="col-xl-12 col-lg-12 col-md-12" style="display: flex; align-items: center; justify-content: center;">
-              <button id="referer" class="v-tab-button" style="background-color: black; color: white;">As Referer</button>
-              <button id="employeer" class="v-tab-button">As Employeer</button>
-              <button id="candidate" class="v-tab-button">As Candidate</button>
+              <button id="referer" class="btn_10 v-tab-button" style="background: linear-gradient(to bottom, #ff5800 0%, #ff8400 100%); color: white;">As Referer</button>
+              <button id="employeer" class="btn_10 v-tab-button">As Employeer</button>
+              <button id="candidate" class="btn_10 v-tab-button">As Candidate</button>
             </div>
             <br>
             <br>
             <style>
               .v-tab-button{
-                padding: 5px 20px;
-                background-color: white;
+                padding: 8px 20px;
+                background: rgb(234, 234, 234);
                 border: none;
-                color: black;
-                border: 1px solid black;
+                color: rgb(97, 0, 0);
+                margin-bottom: 25px;
+                /* border: 1px solid black; */
               }
               .v-tab-button:hover{
-                background-color: grey;
+                background: linear-gradient(to bottom, #ff5800 0%, #ff8400 100%);
                 color: white;
                 cursor: pointer;
               }
@@ -389,7 +390,7 @@
                 document.querySelector("#referer").onclick = (el) =>{
                   
                   resetTabs()
-                  el.target.style.backgroundColor="black"
+                  el.target.style.background="linear-gradient(to bottom, #ff5800 0%, #ff8400 100%)"
                   el.target.style.color="white"
 
                   referer.style.display="flex"
@@ -400,7 +401,7 @@
                 document.querySelector("#employeer").onclick = (el) =>{
                   
                   resetTabs()
-                  el.target.style.backgroundColor="black"
+                  el.target.style.background="linear-gradient(to bottom, #ff5800 0%, #ff8400 100%)"
                   el.target.style.color="white"
                   
                   referer.style.display="none"
@@ -411,7 +412,7 @@
                 document.querySelector("#candidate").onclick = (el) =>{
 
                   resetTabs()
-                  el.target.style.backgroundColor="black"
+                  el.target.style.background="linear-gradient(to bottom, #ff5800 0%, #ff8400 100%)"
                   el.target.style.color="white"
                   
                   referer.style.display="none"
@@ -421,7 +422,7 @@
                 
                 function resetTabs() {
                   document.querySelectorAll(".v-tab-button").forEach((el)=>{
-                    el.style.backgroundColor = "white"
+                    el.style.background = "rgb(234, 234, 234)"
                     el.style.color = "black"
                   })
                 }
