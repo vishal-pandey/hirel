@@ -122,8 +122,8 @@
                     <nav>
                       <ul id="navigation">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#regLogin">Register/Login</a></li>
+                        <!-- <li><a href="">About</a></li> -->
+                        <li class="button-header"><a href="#regLogin" class="header-btn">Register/Login</a></li>
                         <!-- <li><a href="services.html">Services</a></li> -->
                         <!-- <li>
                           <a href="#">Blog</a>
@@ -244,7 +244,7 @@
         }
       </style>
 
-      <div class="support-company-area top-padding2">
+      <div class="support-company-area top-padding2" style="display: none;">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-xl-6 col-lg-6 col-md-10">
@@ -292,6 +292,8 @@
               <button id="employeer" class="v-tab-button">As Employeer</button>
               <button id="candidate" class="v-tab-button">As Candidate</button>
             </div>
+            <br>
+            <br>
             <style>
               .v-tab-button{
                 padding: 5px 20px;
@@ -307,25 +309,51 @@
               }
             </style>
             
-            <div class="col-xl-7 col-lg-7 col-md-7 referer">
-              <div class="single-offers mb-20">
-                <div class="offers-cap">
-                  <img src="assets/img/icon/check.svg" alt="" />
-                  <!-- <h3><a href="#">As referrer</a></h3> -->
-                  <p>
-                    <b> 1. Find a posted jobs on our platform to refer a candidate </b>
-                    Details-Visit our job board to see all currently active jobs. Every job has a referral amount mentioned in the details- this is what you earn when a candidate you referred is hired.
-                    <br>
-                    <b>2. Refer a candidate</b>
-                    Refer by providing us with your candidate's profile in just one single click by simply selecting a candidate profile from your network or database and clicking refer button. That's it!
-                    <br>
-                    <b>3. Track your candidate...and get paid!</b>
-                    You can track the status of each of your referred candidates through your dashboard. When a candidate you referred is hired, you will get the position's referral amount in your bank account.
-
-                  </p>
+            <div class="row referer align-items-center">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="single-offers mb-20">
+                  <div class="offers-cap">
+                    <img src="assets/img/icon/check.svg" alt="" />
+                    <!-- <h3><a href="#">As referrer</a></h3> -->
+                    <p>
+                      <b style="font-size: 17px;"> 1. Find posted jobs on our platform to refer a candidate </b> <br>
+                      Details-Visit our job board to see all currently active jobs. Every job has a referral amount mentioned in the details- this is what you earn when a candidate you referred is hired.
+  
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="single-offers mb-20">
+                  <div class="offers-cap">
+                    <img src="assets/img/icon/check.svg" alt="" />
+                    <!-- <h3><a href="#">As referrer</a></h3> -->
+                    <p>
+                      <b style="font-size: 17px;">2. Refer a candidate</b> <br>
+                      Refer by providing us with your candidate's profile in just one single click by simply selecting a candidate profile from your network or database and clicking refer button. That's it!
+  
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="single-offers mb-20">
+                  <div class="offers-cap">
+                    <img src="assets/img/icon/check.svg" alt="" />
+                    <!-- <h3><a href="#">As referrer</a></h3> -->
+                    <p>
+                      <b style="font-size: 17px;">3. Track your candidate...and get paid!</b> <br>
+                      You can track the status of each of your referred candidates through your dashboard. When a candidate you referred is hired, you will get the position's referral amount in your bank account.
+  
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
             <div class="col-xl-7 col-lg-7 col-md-7 employeer" style="display: none;">
               <div class="single-offers mb-20">
                 <div class="offers-cap">
@@ -364,7 +392,7 @@
                   el.target.style.backgroundColor="black"
                   el.target.style.color="white"
 
-                  referer.style.display="block"
+                  referer.style.display="flex"
                   employeer.style.display="none"
                   candidate.style.display="none"
                 }
@@ -376,7 +404,7 @@
                   el.target.style.color="white"
                   
                   referer.style.display="none"
-                  employeer.style.display="block"
+                  employeer.style.display="flex"
                   candidate.style.display="none"
                 }
                 
@@ -388,7 +416,7 @@
                   
                   referer.style.display="none"
                   employeer.style.display="none"
-                  candidate.style.display="block"
+                  candidate.style.display="flex"
                 }
                 
                 function resetTabs() {
@@ -417,7 +445,7 @@
                   <br>For Referrer -	Huge Incentive and recogination
                   <br>For Candidate -	Job within lowest possible time.Get recoginised by the recruiter from the crowd who are applying through over crowded job portals
                 </p>
-                <a href="#" class="btn_10">Explore Us</a>
+                <a href="#" class="btn_10" id="regLogin">Explore Us</a>
               </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10">
@@ -445,7 +473,7 @@
               </div>
             </div>
           </div>
-          <div id="regLogin" class="row">
+          <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
               <div class="single-card text-center mb-30">
                 <div class="card-top">
