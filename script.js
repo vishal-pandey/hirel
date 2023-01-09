@@ -32,6 +32,10 @@ window.onload = () =>{
       // if(errStr != ""){
         document.querySelector(".error").innerHTML = errStr
       // }
+
+      if(errStr == "") {
+        window.location.href = "./auth.html"
+      }
     }
   }
 
