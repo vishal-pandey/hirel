@@ -157,7 +157,7 @@
                         </li>
                         <li><a href="contact.html">Contact</a></li> -->
 
-                        <li class="button-header">
+                        <li class="button-header" style="display: none;">
                           <a href="/coming-soon.html">
                             <img
                               style="width: 140px"
@@ -186,11 +186,8 @@
       <div class="support-company-area top-padding2" style="margin-top: 40px">
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <form
-              name="contact"
-              method="POST"
+            <div
               style="display: contents"
-              onsubmit="validateForm()"
             >
               <div class="col-xl-6 col-lg-6 col-md-10">
                 <h3>Register as referrer</h3>
@@ -261,19 +258,23 @@
                     border-radius: 0.25rem !important;
                   }
                 </style>
-                <a href="auth.html"
-                  ><button
-                    class="btn"
-                    type="submit"
-                    style="
-                      padding: 20px 50px;
-                      margin-top: 20px;
-                      background: #ff7701;
-                    "
-                  >
-                    Submit
-                  </button></a
+
+                <div class="error" style="color: red; font-size: 12px; padding-top: 20px;">
+
+                </div>
+
+                <button
+                  class="btn referral-submit"
+                  type="submit"
+                  style="
+                    padding: 20px 50px;
+                    margin-top: 20px;
+                    background: #ff7701;
+                  "
                 >
+                  Submit
+                </button>
+                <script src="script.js"></script>
                 <br />
                 <br />
                 <a
@@ -336,7 +337,7 @@
                       <li><a href="#">Home</a></li>
                       <li><a href="#howItWorks">About</a></li>
                       <!-- <li><a href="#">FAQ</a></li> -->
-                      <li><a href="/coming-soon.html">Download the App</a></li>
+                      <!-- <li><a href="/coming-soon.html">Download the App</a></li> -->
                     </ul>
                   </div>
                 </div>
@@ -353,7 +354,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8" style="display: none;">
                 <div class="single-footer-caption mb-50">
                   <div class="footer-tittle mb-20">
                     <!-- <h4>Contact Us</h4>
