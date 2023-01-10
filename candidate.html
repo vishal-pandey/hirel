@@ -238,16 +238,16 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <select
-                      name="recruitment_type"
+                      name="other"
                       id=""
                       style="border-radius: 0"
                     >
                       <option value="select" disabled selected>
                         Current Status
                       </option>
-                      <option value="hiring_company">Currently Working</option>
-                      <option value="recruitment_firm">On Notice Period</option>
-                      <option value="recruitment_firm">Not Employed</option>
+                      <option value="currently_working">Currently Working</option>
+                      <option value="on_notice_period">On Notice Period</option>
+                      <option value="not_employed">Not Employed</option>
                     </select>
                   </div>
                 </div>
@@ -259,6 +259,7 @@
                 <div class="error" style="color: red; font-size: 12px; padding-top: 20px;"></div>
                 <button
                     class="btn referral-submit"
+                    data-formType="candidate"
                     style="
                       padding: 20px 50px;
                       margin-top: 20px;

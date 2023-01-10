@@ -3,6 +3,7 @@ window.onload = () =>{
   let name = document.querySelector('input[name="name"]')
   let email = document.querySelector('input[name="email"]')
   let mobile = document.querySelector('input[name="mobile"]')
+  let other = document.querySelector('select[name="other"]')
   let password = document.querySelector('input[name="password"]')
   
   let referralButton = document.querySelector(".referral-submit")
@@ -34,7 +35,43 @@ window.onload = () =>{
       // }
 
       if(errStr == "") {
-        window.location.href = "./auth.html"
+        // console.log(name.value)
+        // console.log(email.value)
+        // console.log(mobile.value)
+        // console.log(other.value)
+        // console.log(referralButton.getAttribute("data-formType"))
+
+        let url = 'http://3.111.78.198:3000'
+
+        let data = {
+          "name": name.value,
+          "email": email.value,
+          "mobile": mobile.value,
+          "other": other.value, 
+          "formType": referralButton.getAttribute("data-formType")
+        }
+
+        console.log(data)
+
+        fetch(url, {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify(data) // body data type must match "Content-Type" header
+        })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data)
+          if(data.status) {
+            window.location.href = "./auth.html"
+          } else {
+            // window.location.href = "./auth.html"
+          }
+        })
+
+
       }
     }
   }
