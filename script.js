@@ -41,7 +41,7 @@ window.onload = () =>{
         // console.log(other.value)
         // console.log(referralButton.getAttribute("data-formType"))
 
-        let url = 'http://3.111.78.198:3000'
+        let url = 'https://api.hirel.in'
 
         let data = {
           "name": name.value,
