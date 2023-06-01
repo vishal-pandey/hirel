@@ -1883,7 +1883,7 @@ li {
   display: inline-block;
   position: relative;
   z-index: 1;
-  margin: 0px 21px;
+  /* margin: 0px 21px; */
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -1904,7 +1904,7 @@ li {
 .main-header .main-menu ul li a {
   color: #423F8D;
   font-weight: 700;
-  padding: 39px 2px;
+  /* padding: 39px 2px; */
   display: block;
   font-size: 16px;
   -webkit-transition: 0.3s;
